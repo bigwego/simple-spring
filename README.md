@@ -1,1 +1,1 @@
-# simple-spring
+# simple-main.java.spring
