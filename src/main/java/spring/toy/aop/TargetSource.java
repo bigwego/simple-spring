@@ -1,6 +1,6 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
 
-class TargetSource {
+public class TargetSource {
 
     private final Class<?> targetClass;
 
@@ -8,21 +8,21 @@ class TargetSource {
 
     private final Object target;
 
-    TargetSource(Class<?> targetClass, Class<?>[] interfaces, Object target) {
+    public TargetSource(Class<?> targetClass, Class<?>[] interfaces, Object target) {
         this.targetClass = targetClass;
         this.interfaces = interfaces;
         this.target = target;
     }
 
-    Class<?> getTargetClass() {
+    public Class<?> getTargetClass() {
         return targetClass;
     }
 
-    Class<?>[] getInterfaces() {
+    public Class<?>[] getInterfaces() {
         return interfaces;
     }
 
-    Object getTarget() {
+    public Object getTarget() {
         return target;
     }
 }

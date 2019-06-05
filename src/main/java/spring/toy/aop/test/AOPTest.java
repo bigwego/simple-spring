@@ -1,14 +1,15 @@
-package main.java.spring.toy.aop.test;
+package spring.toy.aop.test;
 
 import java.lang.reflect.Method;
 
-import com.teamlab.hellospringbootthymeleaf.spring.simple.aop.HelloService;
-import com.teamlab.hellospringbootthymeleaf.spring.simple.aop.HelloServiceImpl;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.aop.AdvisedSupport;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.aop.JdkDynamicAopProxy;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.aop.LogInterceptor;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.aop.MethodMatcher;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.aop.TargetSource;
+import spring.simple.aop.HelloService;
+import spring.simple.aop.HelloServiceImpl;
+import spring.toy.aop.AdvisedSupport;
+import spring.toy.aop.JdkDynamicAopProxy;
+import spring.toy.aop.LogInterceptor;
+import spring.toy.aop.MethodMatcher;
+import spring.toy.aop.TargetSource;
+
 
 public class AOPTest {
 

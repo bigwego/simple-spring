@@ -1,4 +1,4 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
 
 public interface ClassFilter {
 

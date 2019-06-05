@@ -1,4 +1,4 @@
-package main.java.spring.simple.ioc;
+package spring.simple.ioc;
 
 import java.io.FileInputStream;
 import java.io.InputStream;

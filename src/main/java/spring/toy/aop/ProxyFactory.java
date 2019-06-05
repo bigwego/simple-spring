@@ -1,8 +1,7 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
 
 
 public class ProxyFactory extends AdvisedSupport implements AopProxy {
-
 
     @Override
     public Object getProxy() {

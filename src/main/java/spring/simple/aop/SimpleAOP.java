@@ -1,8 +1,8 @@
-package main.java.spring.simple.aop;
+package spring.simple.aop;
 
 import java.lang.reflect.Proxy;
 
-class SimpleAOP {
+public class SimpleAOP {
 
     static Object getProxy(Object bean, Advice advice) {
         return Proxy.newProxyInstance(SimpleAOP.class.getClassLoader(),

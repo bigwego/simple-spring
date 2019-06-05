@@ -1,4 +1,4 @@
-package main.java.spring.toy.ioc.xml;
+package spring.toy.ioc.xml;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -7,12 +7,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanDefinition;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanPostProcessor;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanReference;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.PropertyValue;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.factory.BeanFactory;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.factory.BeanFactoryAware;
+import spring.toy.ioc.BeanDefinition;
+import spring.toy.ioc.BeanPostProcessor;
+import spring.toy.ioc.BeanReference;
+import spring.toy.ioc.PropertyValue;
+import spring.toy.ioc.factory.BeanFactory;
+import spring.toy.ioc.factory.BeanFactoryAware;
+
 
 public class XmlBeanFactory implements BeanFactory {
 
@@ -29,7 +30,7 @@ public class XmlBeanFactory implements BeanFactory {
         loadBeanDefinitions(location);
     }
 
-    private Object getBean(String name) throws Exception {
+    public Object getBean(String name) throws Exception {
         BeanDefinition bd = beanDefinitionMap.get(name);
         if (bd == null) {
             throw new IllegalArgumentException("no such bean with name: " + name);
@@ -110,7 +111,7 @@ public class XmlBeanFactory implements BeanFactory {
         beanPostProcessors.add(bean);
     }
 
-    private List getBeansForType(Class type) throws Exception {
+    public List getBeansForType(Class type) throws Exception {
         List beans = new ArrayList();
         for (String bdName : beanDefinitionNames) {
             BeanDefinition bd = beanDefinitionMap.get(bdName);

@@ -1,4 +1,4 @@
-package main.java.spring.toy.ioc.factory;
+package spring.toy.ioc.factory;
 
 public interface BeanFactoryAware {
 

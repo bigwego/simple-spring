@@ -1,13 +1,14 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
+
 
 import java.util.List;
 
 import org.aopalliance.intercept.MethodInterceptor;
 
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanPostProcessor;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.factory.BeanFactory;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.factory.BeanFactoryAware;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.xml.XmlBeanFactory;
+import spring.toy.ioc.BeanPostProcessor;
+import spring.toy.ioc.factory.BeanFactory;
+import spring.toy.ioc.factory.BeanFactoryAware;
+import spring.toy.ioc.xml.XmlBeanFactory;
 
 public class AspectJAwareAdvisorAutoProxyCreator implements BeanPostProcessor, BeanFactoryAware {
 

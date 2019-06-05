@@ -1,4 +1,4 @@
-package main.java.spring.simple.ioc;
+package spring.simple.ioc;
 
 public class Car {
 

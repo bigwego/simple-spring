@@ -1,4 +1,4 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -8,7 +8,7 @@ import org.aopalliance.intercept.MethodInterceptor;
 
 public final class JdkDynamicAopProxy extends AbstractAopProxy implements InvocationHandler {
 
-    JdkDynamicAopProxy(AdvisedSupport advisedSupport) {
+    public JdkDynamicAopProxy(AdvisedSupport advisedSupport) {
         super(advisedSupport);
     }
 

@@ -1,7 +1,4 @@
-package main.java.spring.simple.aop;
-
-import spring.simple.aop.BeforeAdvice;
-import spring.simple.aop.HelloService;
+package spring.simple.aop;
 
 public class SimpleAOPTest {
 

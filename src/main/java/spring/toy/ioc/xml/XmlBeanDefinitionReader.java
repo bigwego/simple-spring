@@ -1,4 +1,4 @@
-package main.java.spring.toy.ioc.xml;
+package spring.toy.ioc.xml;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,10 +14,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanDefinition;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanDefinitionReader;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.BeanReference;
-import com.teamlab.hellospringbootthymeleaf.spring.toy.ioc.PropertyValue;
+import spring.toy.ioc.BeanDefinition;
+import spring.toy.ioc.BeanDefinitionReader;
+import spring.toy.ioc.BeanReference;
+import spring.toy.ioc.PropertyValue;
+
 
 class XmlBeanDefinitionReader implements BeanDefinitionReader {
 
@@ -27,7 +28,7 @@ class XmlBeanDefinitionReader implements BeanDefinitionReader {
         registry = new HashMap<String, BeanDefinition>();
     }
 
-    void loadBeanDefinitions(String location) throws FileNotFoundException, Exception {
+    public void loadBeanDefinitions(String location) throws FileNotFoundException, Exception {
         InputStream is = new FileInputStream(location);
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = factory.newDocumentBuilder();

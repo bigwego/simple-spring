@@ -1,4 +1,4 @@
-package main.java.spring.toy.ioc;
+package spring.toy.ioc;
 
 public interface BeanPostProcessor {
 

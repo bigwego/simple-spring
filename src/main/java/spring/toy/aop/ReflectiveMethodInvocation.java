@@ -1,4 +1,4 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Method;

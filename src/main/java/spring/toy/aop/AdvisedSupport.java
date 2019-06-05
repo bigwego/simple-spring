@@ -1,8 +1,8 @@
 package spring.toy.aop;
 
-import org.aopalliance.ilntercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInterceptor;
 
-class AdvisedSupport {
+public class AdvisedSupport {
 
     private TargetSource targetSource;
 
@@ -14,15 +14,15 @@ class AdvisedSupport {
         return targetSource;
     }
 
-    void setTargetSource(TargetSource targetSource) {
+    public void setTargetSource(TargetSource targetSource) {
         this.targetSource = targetSource;
     }
 
-    MethodInterceptor getMethodInterceptor() {
+    public MethodInterceptor getMethodInterceptor() {
         return methodInterceptor;
     }
 
-    void setMethodInterceptor(MethodInterceptor methodInterceptor) {
+    public void setMethodInterceptor(MethodInterceptor methodInterceptor) {
         this.methodInterceptor = methodInterceptor;
     }
 
@@ -30,7 +30,7 @@ class AdvisedSupport {
         return methodMatcher;
     }
 
-    void setMethodMatcher(MethodMatcher methodMatcher) {
+    public void setMethodMatcher(MethodMatcher methodMatcher) {
         this.methodMatcher = methodMatcher;
     }
 }

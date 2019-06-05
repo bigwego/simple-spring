@@ -1,4 +1,7 @@
-package main.java.spring.toy.aop;
+package spring.toy.aop;
+
+import spring.toy.aop.ClassFilter;
+import spring.toy.aop.MethodMatcher;
 
 public interface Pointcut {
 
